@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DetectionCible : MonoBehaviour
+public class DetectionCible3D : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision) // OnCollisionEnter au lieu de OnCollisionEnter2D
+    void OnCollisionEnter(Collision collision)
     {
         print(collision.gameObject.name + " : " + collision.gameObject.tag);
         
@@ -14,4 +14,3 @@ public class DetectionCible : MonoBehaviour
         }
     }
 }
-
